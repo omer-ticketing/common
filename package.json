@@ -8,14 +8,20 @@
         "build/**/*"
     ],
     "scripts": {
-        "clean": "del .\\build\\*",
+        "clean": "if exist build rmdir /s /q build",
         "build": "npm run clean && tsc"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "del-cli": "^5.1.0",
         "typescript": "^5.5.3"
+    },
+    "dependencies": {
+        "@types/express": "^4.17.21",
+        "@types/jsonwebtoken": "^9.0.6",
+        "express": "^4.19.2",
+        "express-validator": "^7.1.0",
+        "jsonwebtoken": "^9.0.2"
     }
 }
