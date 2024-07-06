@@ -1,13 +1,6 @@
-interface Color {
-	r: number;
-	g: number;
-	b: number;
-}
-
-const color: Color = {
-	r: 125,
-	g: 125,
-	b: 125
-};
-
-export default color;
+export * from './errors/badRequestError';
+export * from './errors/customError';
+export * from './errors/databaseConnectionError';
+export * from './errors/notAuthorizedError';
+export * from './errors/notFoundError';
+export * from './errors/requestValidationError';
