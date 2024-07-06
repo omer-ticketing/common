@@ -1,6 +1,6 @@
 {
     "name": "@omer-ticketing/common",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "",
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
@@ -10,7 +10,7 @@
     "scripts": {
         "clean": "if exist build rmdir /s /q build",
         "build": "npm run clean && tsc",
-		"update:patch": "npm version patch && npm run build && npm publish"
+        "update:patch": "npm version patch && npm run build && npm publish"
     },
     "keywords": [],
     "author": "",
