@@ -6,4 +6,4 @@ export * from './errors/notFoundError';
 export * from './errors/requestValidationError';
 
 export * from './middlewares/error';
-export * from './middlewares/authMiddlewares';
+export * as authMiddlewares from './middlewares/authMiddlewares';
