@@ -9,6 +9,7 @@ export const errorHandler = (err: Error, req: Request, res: Response, next: Next
         });
     }
 
+	console.error(err);
     res.status(500).json({
         status: "failed",
         errors: err.message || "Something wend wrong",
