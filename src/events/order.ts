@@ -12,6 +12,7 @@ export interface OrderCreatedEvent {
 			id: string;
 			price: number;
 		};
+		version: number;
 	}
 }
 export interface OrderCancelledEvent {
@@ -19,5 +20,6 @@ export interface OrderCancelledEvent {
 	data: {
 		id: string;
 		ticketId: string;
+		version: number;
 	}
 }
