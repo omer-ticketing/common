@@ -15,3 +15,4 @@ export * from './events/subjects';
 export * from './events/ticket';
 export * from './events/order';
 export * from './events/types';
+export * from './events/expiration';
